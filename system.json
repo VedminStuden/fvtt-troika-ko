@@ -16,8 +16,8 @@
     "minimum": "11",
     "verified": "11"
   },
-  "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
-  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v1.1.0.zip",
+  "manifest": "https://raw.githubusercontent.com/VedminStuden/fvtt-troika-ko/main/system.json",
+  "download": "https://github.com/VedminStuden/fvtt-troika-ko/archive/refs/heads/main.zip",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "stamina",
