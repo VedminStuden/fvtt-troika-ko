@@ -1,14 +1,14 @@
 {
   "id": "troika",
-  "title": "Troika! (Unofficial)",
+  "title": "Troika! (한국어)",
   "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by author(s), and is not affiliated with the Melsonian Arts Council.",
   "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
   "license": "LICENSE.txt",
   "background": "systems/troika/assets/troika-compatibility-logo-splash-page.webp",
   "authors": [
     {
-      "name": "N. Eimers",
-      "discord": "TheLastScrub#7146"
+      "name": "vedmin",
+      "discord": "vedmin_studen"
     }    
   ],
   "version": "1.1.0",
@@ -33,7 +33,7 @@
   "packs": [
     {
       "name": "troika-srd-spells",
-      "label": "Troika SRD Spells",
+      "label": "트로이카 SRD 주문",
       "system": "troika",
       "path": "packs/troika-srd-spells",
       "private": false,
@@ -42,7 +42,7 @@
     },
     {
       "name": "troika-srd-roll-tables",
-      "label": "Troika SRD Roll Tables",
+      "label": "트로이카 SRD 랜덤 테이블",
       "system": "troika",
       "path": "packs/troika-srd-roll-tables",
       "private": false,
@@ -51,7 +51,7 @@
     },
     {
       "name": "troika-srd-weapons",
-      "label": "Troika SRD Weapons and Attacks",
+      "label": "트로이카 SRD 무기와 공격",
       "system": "troika",
       "path": "packs/troika-srd-weapons-and-attacks",
       "private": false,
@@ -60,7 +60,7 @@
     },
     {
       "name": "troika-srd-skills",
-      "label": "Troika SRD Skills",
+      "label": "트로이카 SRD 기술",
       "system": "troika",
       "path": "packs/troika-srd-skills",
       "private": false,
@@ -69,7 +69,7 @@
     },
     {
       "name": "troika-srd-items",
-      "label": "Troika SRD Items",
+      "label": "트로이카 SRD 아이템",
       "system": "troika",
       "path": "packs/troika-srd-items",
       "private": false,
@@ -78,7 +78,7 @@
     },
     {
       "name": "troika-srd-backgrounds",
-      "label": "Troika SRD Backgrounds",
+      "label": "트로이카 SRD 배경",
       "system": "troika",
       "path": "packs/troika-srd-backgrounds",
       "private": false,
