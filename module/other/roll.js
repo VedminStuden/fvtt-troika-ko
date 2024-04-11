@@ -2,7 +2,7 @@ export async function rollSkillTestOver(actor, totalRank, rollLabel){
 
     let formula = `2d6+${totalRank}`
     const roll = await new Roll(formula, {}).roll({async: true});
-    rollLabel += " (Roll Against)";
+    rollLabel += " (대항 판정)";
 
     roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: actor }),
@@ -16,7 +16,7 @@ export async function rollSkillTestUnder(actor, totalRank, rollLabel){
     const roll = await new Roll(formula, {}).roll({async: true});
     let dieResult = roll.total;
 
-    rollLabel += " (Roll Under)";
+    rollLabel += " (하향 판정)";
 
     let style = "";
     let isSuccess = false;
@@ -66,21 +66,21 @@ export async function showDamageRollDialog(actor, item){
     let html = "";
 
     html += `<div class="modify-damage-dialog">`;
-    html += `     <label for="targetModifier">Modifier:</label>`
+    html += `     <label for="targetModifier">수정치:</label>`
     html += `     <input class="center-aligned-input-text-small" type="number" name="damageModifier" value="0" title="+/- Modifier for armour, item bonuses, etc." />`
-    html += `     <label for="isMightyBlow">Mighty Blow:</label>`
+    html += `     <label for="isMightyBlow">강력한 타격:</label>`
     html += `     <input class="center-aligned-input-text-small" type="checkbox" name="isMightyBlow" value="0" title="Mighty Blow (x2 Damage)" />`
     html += `</div>`;
-    html += `<div class="modify-damage-dialog">*ctrl+click or shift-click to bypass this window and roll with no modifier.</div>`;
+    html += `<div class="modify-damage-dialog">*ctrl+마우스 왼쪽 또는 Shift+마우스 왼쪽을 눌러 수정치 없이 바로 판정할 수도 있습니다.</div>`;
 
 
     new Dialog({
-        title: "Modify Damage Roll",
+        title: "피해 판정 수정치",
         default: "rollDamage",
         content: html,
         buttons: {
           rollDamage:{
-            label: "Roll",
+            label: "굴림",
             callback: html => { 
               try{
                 damageModifier = parseInt(html.find("[name='damageModifier']").val());
@@ -141,7 +141,7 @@ export async function showDamageRollDialog(actor, item){
 
 export async function rollDamageForItem(actor, item, damageModifier, isMightyBlow){
 
-    let label = `Rolling damage for ${item.name}`;
+    let label = `${item.name}로 피해를 가합니다`;
     let formula = "1d6";
     let damage = 0;
     let damageModifierLabel = ""
@@ -191,7 +191,7 @@ export async function rollDamageForItem(actor, item, damageModifier, isMightyBlo
 
     html =  `<div class="dice-roll">`
     html += `     <div class="dice-result">`
-    html += `     <div class="dice-formula">Damage for <i>${item.name} </i>${damageModifier != 0 ? " [" + damageModifierLabel + "]" : ""} ${isMightyBlow ? "<b>[Mighty Blow]</b>" : ""}</div>`
+    html += `     <div class="dice-formula"><i>${item.name}</i>로 피해를 가합니다${damageModifier != 0 ? " [" + damageModifierLabel + "]" : ""} ${isMightyBlow ? "<b>[Mighty Blow]</b>" : ""}</div>`
     html += `     <div class="dice-formula">`
     html += `          <div class="attacks-grid-chat">`
     html += `               <span class="dark-underline ${result === 1 ? "bolded" : ""}">1</span>`
@@ -246,7 +246,7 @@ export async function showSkillTestDialog(actor, totalRank, rollLabel){
         default: "roll",
         buttons: {
           rollUnder:{
-            label: "Roll Under",
+            label: "하향 판정",
     
             callback: () => { 
               try{
@@ -258,7 +258,7 @@ export async function showSkillTestDialog(actor, totalRank, rollLabel){
             }
           },
           rollOver:{
-            label: "Roll Over",
+            label: "대항 판정",
     
             callback: () => { 
               try{
