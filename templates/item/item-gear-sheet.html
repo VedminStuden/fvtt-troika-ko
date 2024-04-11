@@ -14,12 +14,12 @@
         </div>
 
         <div class="labeled-input-container">
-          <span class="bolded-label right-margin-5pct grid-item-stretch-height-to-fit">Inventory Slots Required:</span>
+          <span class="bolded-label right-margin-5pct grid-item-stretch-height-to-fit">인벤토리 공간 차지:</span>
           <input class="standard-width-center-aligned-numeric-input-text" name="system.inventorySlots" data-dtype="Numeric" inputmode="numeric" value="{{item.system.inventorySlots}}" />
         </div>
 
         <div class="labeled-input-container">
-          <span class="bolded-label right-margin-5pct grid-item-stretch-height-to-fit">Quantity:</span>
+          <span class="bolded-label right-margin-5pct grid-item-stretch-height-to-fit">수량:</span>
           <input class="standard-width-center-aligned-numeric-input-text" name="system.quantity" data-dtype="Numeric" inputmode="numeric" value="{{item.system.quantity}}" />
         </div>
 
@@ -27,16 +27,16 @@
 
       <div class="item-sheet-horizontal-grid-4col">
                           
-        <span class="bolded-label">Can Be Used to Attack:</span>
+        <span class="bolded-label">공격에 쓸 수 있음:</span>
         <input type="checkbox" name="system.canAttack" type="text" {{checked item.system.canAttack}} data-dtype="Boolean" />
 
-        <span class="bolded-label">Equipped:</span>
+        <span class="bolded-label">장비함:</span>
         <input type="checkbox" name="system.equipped" type="text" {{checked item.system.equipped}} data-dtype="Boolean" />
 
-        <span class="bolded-label">Requires Two Hands:</span>
+        <span class="bolded-label">양손이 요구됨:</span>
         <input type="checkbox" name="system.requiresTwoHands" type="text" {{checked item.system.requiresTwoHands}} data-dtype="Boolean" />
         
-        <span class="bolded-label">Armour Provided:</span>
+        <span class="bolded-label">장갑을 제공함:</span>
         <input class="standard-width-center-aligned-numeric-input-text" inputmode="numeric" name="system.armourProvided" value="{{item.system.armourProvided}}" data-dtype="Numeric"/>
 
       </div>
@@ -47,10 +47,10 @@
 
         <div class="item-sheet-horizontal-grid-2col">          
 
-          <span class="bolded-label">Armour Ignored:</span>
+          <span class="bolded-label">장갑 무시:</span>
           <input class="standard-width-center-aligned-numeric-input-text" name="system.armourIgnored" data-dtype="Numeric" value="{{item.system.armourIgnored}}" /></h1>
 
-          <span class="bolded-label">Damage Rolls:</span>
+          <span class="bolded-label">피해 굴림:</span>
           <div>
             
             <div class="item-sheet-attack-grid">
@@ -80,7 +80,7 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="description">설명</a>
     </nav>
 
     {{!-- Sheet Body --}}
