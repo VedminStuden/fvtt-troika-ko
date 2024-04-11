@@ -8,7 +8,7 @@
         <!-- <div class="item-sheet-horizontal-grid-2col"> -->
         <div class="labeled-input-container">
 
-          <span class="bolded-label right-margin-5pct">Name:</span>
+          <span class="bolded-label right-margin-5pct">명칭:</span>
           <input name="name" type="text" value="{{item.name}}" /></h1>         
               
         </div>
@@ -16,11 +16,11 @@
       </div>
 
       <div class="item-sheet-skills-and-spells-grid item">
-        <h4 class="grid-header-label">Improve</h4>
-        <h4 class="grid-header-label">Cost</h4>
-        <h4 class="grid-header-label">Rank</h4>
-        <h4 class="grid-header-label">Other Modifiers</h4>
-        <h4 class="grid-header-label">Can Attack?</h4>
+        <h4 class="grid-header-label">개선됨</h4>
+        <h4 class="grid-header-label">비용</h4>
+        <h4 class="grid-header-label">등급</h4>
+        <h4 class="grid-header-label">기타 수정치</h4>
+        <h4 class="grid-header-label">공격용</h4>
       </div>
 
       <div class="item-sheet-skills-and-spells-grid item" data-item-id="{{item._id}}"> 
@@ -45,7 +45,7 @@
       <div class="skill-attack-section item-sheet-horizontal-grid-2col">
 
         {{#if item.system.canAttack}}
-          <span class="bolded-label">Damage Rolls</span>
+          <span class="bolded-label">피해 굴림</span>
             
           <div class="item-sheet-attack-grid">
             <span class="bolded-label">1</span>
@@ -73,7 +73,7 @@
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">Description</a>
+        <a class="item" data-tab="description">설명</a>
     </nav>
 
     {{!-- Sheet Body --}}
