@@ -1,30 +1,30 @@
 @font-face {
     font-family: 'AveriaLibre';
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Regular.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/RIDIBatang-Regular.ttf') format('truetype'); 
 }
 
 @font-face {
     font-family: 'AveriaLibre';
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Light.ttf') format('truetype');
+    src: url('../css/fonts/Averia_Libre/RIDIBatang-Light.ttf') format('truetype');
     font-weight: lighter;
 }
 
 @font-face {
     font-family: 'AveriaLibre';
     font-weight: bold;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Bold.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/RIDIBatang-Bold.ttf') format('truetype'); 
 }
 
 @font-face {
     font-family: 'AveriaLibre';
     font-style: italic;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Italic.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/RIDIBatang-Italic.ttf') format('truetype'); 
 }
 
 /*
 @font-face {
     font-family: 'AveriaLibre';
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-LightItalic.ttf') format('truetype');
+    src: url('../css/fonts/Averia_Libre/RIDIBatang-LightItalic.ttf') format('truetype');
     font-weight: lighter;
     font-style: italic;
 }
@@ -34,16 +34,23 @@
     font-family: 'AveriaLibre';
     font-weight: bold;
     font-style: italic;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-BoldItalic.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/RIDIBatang-BoldItalic.ttf') format('truetype'); 	
+}
+
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Set font to Averia Libre, but have to exclude 'fas' class or we break all FAS icons! */
 .troika *:not(.fas):not(.fa-solid) {
-    font-family: "AveriaLibre", "Signika", sans-serif;
+    font-family: "RIDIBatang", "Signika", sans-serif;
 }
 
 .journal-sheet.journal-entry{
-    font-family: "AveriaLibre", "Signika", sans-serif;
+    font-family: "RIDIBatang", "Signika", sans-serif;
 }
 
 /*
