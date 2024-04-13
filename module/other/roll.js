@@ -373,3 +373,8 @@ export async function dx6Roll(actor, numberOfD6){
     });
 
   }
+
+export async function create_roll(formula) {
+  let roll = await new Roll(formula).roll();
+  return [roll, game.dice3d?.showForRoll(roll)];
+}
