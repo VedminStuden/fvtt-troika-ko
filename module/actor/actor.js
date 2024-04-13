@@ -9,7 +9,7 @@ export class TroikaActor extends Actor {
 
     /** @override */
     get template() {
-        return "systems/troika/templates/actor/pc-sheet.html";
+        return "systems/troika-ko/templates/actor/pc-sheet.html";
     }
 
     /** @override */
