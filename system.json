@@ -11,7 +11,7 @@
       "discord": "vedmin_studen"
     }    
   ],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
@@ -81,6 +81,33 @@
       "label": "트로이카 SRD 배경",
       "system": "troika",
       "path": "packs/troika-srd-backgrounds",
+      "private": false,
+      "type": "Actor",
+      "flags": {}
+    },
+    {
+      "name": "troika-bat-npc",
+      "label": "트로이카 시나리오 npc",
+      "system": "troika",
+      "path": "packs/troika-bat-npc",
+      "private": false,
+      "type": "Actor",
+      "flags": {}
+    },
+    {
+      "name": "troika-bat-rule",
+      "label": "트로이카 룰북",
+      "system": "troika",
+      "path": "packs/troika-bat-rule",
+      "private": false,
+      "type": "Actor",
+      "flags": {}
+    },
+    {
+      "name": "troika-bat-scene",
+      "label": "트로이카 시나리오 신",
+      "system": "troika",
+      "path": "packs/troika-bat-scene",
       "private": false,
       "type": "Actor",
       "flags": {}
