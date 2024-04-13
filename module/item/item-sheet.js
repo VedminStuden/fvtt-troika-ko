@@ -30,7 +30,7 @@ export class TroikaItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/troika/templates/item";
+    const path = "systems/troika-ko/templates/item";
     
     // unique item sheet by type, like `item-type-sheet.html`.
     if(this.item.type === 'spell' || this.item.type === 'skill'){
