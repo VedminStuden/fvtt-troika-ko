@@ -1,0 +1,5 @@
+2024/04/13-16:07:34.810 4de0 Delete type=3 #1
+2024/04/13-16:07:44.094 4a28 Level-0 table #5: started
+2024/04/13-16:07:44.114 4a28 Level-0 table #5: 2527 bytes OK
+2024/04/13-16:07:44.117 4a28 Delete type=0 #3
+2024/04/13-16:07:44.118 4a28 Manual compaction at level-0 from '!scenes!BWjXkCUfh3RLneCG' @ 72057594037927935 : 1 .. '!scenes.notes!BWjXkCUfh3RLneCG.9TkkHjYmSWi4VifO' @ 0 : 0; will stop at (end)
