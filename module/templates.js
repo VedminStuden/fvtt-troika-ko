@@ -5,6 +5,6 @@
  */
 export const preloadHandlebarsTemplates = async function() {
     return loadTemplates([
-      "systems/troika/templates/actor/pc-sheet.html"
+      "systems/troika-ko/templates/actor/pc-sheet.html"
     ]);
   };
