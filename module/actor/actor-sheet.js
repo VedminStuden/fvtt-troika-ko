@@ -8,7 +8,7 @@ export class TroikaActorSheet extends ActorSheet {
     /** @override */
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-        classes: ["troika-ko", "sheet", "actor"],
+        classes: ["troika", "sheet", "actor"],
         template: "systems/troika-ko/templates/actor/pc-sheet.html",
         width: 700,
         height: 750,
