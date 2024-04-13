@@ -100,7 +100,7 @@
       "system": "troika",
       "path": "packs/troika-bat-rule",
       "private": false,
-      "type": "Actor",
+      "type": "Journal",
       "flags": {}
     },
     {
@@ -109,7 +109,7 @@
       "system": "troika",
       "path": "packs/troika-bat-scene",
       "private": false,
-      "type": "Actor",
+      "type": "Scene",
       "flags": {}
     }
   ]
