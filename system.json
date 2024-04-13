@@ -100,7 +100,7 @@
       "system": "troika",
       "path": "packs/troika-bat-rule",
       "private": false,
-      "type": "Journal",
+      "type": "JournalEntry",
       "flags": {}
     },
     {
