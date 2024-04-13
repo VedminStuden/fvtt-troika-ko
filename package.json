@@ -1,5 +1,5 @@
 {
-  "name": "troika-ko",
+  "name": "troika",
   "version": "1.0.0",
   "type": "module",
   "main": "gulpfile.mjs",
