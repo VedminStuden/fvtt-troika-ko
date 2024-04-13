@@ -87,7 +87,7 @@
     },
     {
       "name": "troika-bat-npc",
-      "label": "트로이카 시나리오 npc",
+      "label": "트로이카 bat npc",
       "system": "troika",
       "path": "packs/troika-bat-npc",
       "private": false,
@@ -96,7 +96,7 @@
     },
     {
       "name": "troika-bat-rule",
-      "label": "트로이카 룰북",
+      "label": "트로이카 룰 및 모듈",
       "system": "troika",
       "path": "packs/troika-bat-rule",
       "private": false,
@@ -105,7 +105,7 @@
     },
     {
       "name": "troika-bat-scene",
-      "label": "트로이카 시나리오 신",
+      "label": "트로이카 bat 장면",
       "system": "troika",
       "path": "packs/troika-bat-scene",
       "private": false,
