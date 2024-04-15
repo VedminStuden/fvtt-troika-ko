@@ -141,7 +141,7 @@ export async function showDamageRollDialog(actor, item){
 
 export async function rollDamageForItem(actor, item, damageModifier, isMightyBlow){
 
-    let label = `${item.name}로 피해를 가합니다`;
+    let label = `${item.name}(으)로 피해를 가합니다`;
     let formula = "1d6";
     let damage = 0;
     let damageModifierLabel = ""
